@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .rubik-doodle-shadow-regular {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  .nav-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nav-block:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .arrow {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .nav-text {
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  .small {
+    font-size: 40px;
+  }
+  
+  .centersmall {
+    font-size: 25px;
+  }
+  
+  .centerbig {
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: Rubik Doodle Shadow;
+  }
+  
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 32%;
+    height: 65vh; /* Витягнута по висоті */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover h3 {
+    color: #444;
+  }
+  
+  .card p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 5px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover p {
+    opacity: 0.9;
+  }
+  
+  .clean-link {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+  
+  .clean-link:focus,
+  .clean-link:active,
+  .clean-link:hover {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+  
